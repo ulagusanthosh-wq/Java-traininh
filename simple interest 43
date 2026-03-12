@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class SimpleInterest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int P = scanner.nextInt();
+        int R = scanner.nextInt();
+        int T = scanner.nextInt();
+
+        double simpleInterest = (double) (P * R * T) / 100;
+
+        System.out.println((int) simpleInterest);
+        scanner.close();
+    }
+}
