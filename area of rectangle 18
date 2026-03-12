@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class AreaOfRectangle {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int length = scanner.nextInt();
+        int breadth = scanner.nextInt();
+        long area = (long) length * breadth;
+        System.out.println(area);
+        scanner.close();
+    }
+}
