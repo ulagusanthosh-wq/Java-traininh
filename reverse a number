@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+       long N = s.nextLong(); 
+        long reverse = 0;
+        long tempN = N;
+        while (tempN != 0) {
+            long d = tempN % 10;
+            reverse= reverse * 10 + d;
+            tempN /= 10;
+        }
+        System.out.println(reverse);
+    }
+}
