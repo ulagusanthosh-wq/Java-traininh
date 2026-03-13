@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class MultiplicationTable {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int N = s.nextInt(); 
+        for (int i = 1; i <= 10; i++) {
+            int product = i * N;
+            System.out.println(i + "*" + N + "=" + product);
+        }
+    }
+}
