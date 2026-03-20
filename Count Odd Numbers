@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class oddCounter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int oddCount = 0;
+        for (int i = 0; i < N; i++) {
+            int num = scanner.nextInt();
+            if (num % 2 != 0) {
+                oddCount++;
+            }
+        }
+        System.out.println(oddCount);
+    }
+}
