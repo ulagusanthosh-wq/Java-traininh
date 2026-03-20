@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        if (!sc.hasNextInt()) return;
+        int n = sc.nextInt();
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            if (sc.hasNextInt()) {
+                int current = sc.nextInt();
+                if (current < min) min = current; 
+                if (current > max) max = current;
+            }
+        }
+        System.out.println(max - min);
+    }
+}
