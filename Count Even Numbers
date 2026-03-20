@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class EvenCounter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the number of elements (N)
+        int N = scanner.nextInt();
+
+        // Initialize a counter for even numbers
+        int evenCount = 0;
+
+        // Loop N times to read each integer
+        for (int i = 0; i < N; i++) {
+            int num = scanner.nextInt();
+            // Check if the number is even using the modulo operator
+            if (num % 2 == 0) {
+                evenCount++;
+            }
+        }
+
+        // Print the final count of even numbers
+        System.out.println(evenCount);
+
+        // Close the scanner
+        scanner.close();
+    }
+}
